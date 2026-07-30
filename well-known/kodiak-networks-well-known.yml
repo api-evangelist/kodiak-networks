@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: searched
+source: live HTTP probes of http://www.kodiaknetworks.com
+host: http://www.kodiaknetworks.com
+note: >-
+  The legacy Kodiak Networks host serves only a static "Site under maintenance"
+  placeholder (HTTP 200, no HTTPS listener). No /.well-known/ discovery surface
+  is published. Recorded as a negative probe result so future runs do not
+  re-discover the same 404s.
+documents_found: 0
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /openapi.json
+  status: 404
+- path: /asyncapi.yaml
+  status: 404

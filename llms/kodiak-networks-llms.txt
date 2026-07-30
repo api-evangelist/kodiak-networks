@@ -1,0 +1,43 @@
+# Kodiak Networks
+
+> Kodiak Networks built a carrier-grade Push-to-Talk over Cellular (PoC) platform that
+> wireless operators deployed as their own branded PTT service. Motorola Solutions
+> acquired the company in 2017; the technology continues to ship as Motorola Solutions'
+> "Kodiak" mission-critical push-to-talk (MCPTT) offering for carriers. Kodiak Networks
+> no longer operates as an independent company and publishes no public developer surface
+> of its own — API access to broadband push-to-talk runs through the Motorola Solutions
+> Application Developer Program.
+
+## Status
+
+- Independent operation: ended (acquired by Motorola Solutions, 2017)
+- Legacy site http://www.kodiaknetworks.com/ serves a "Site under maintenance" placeholder (HTTP only, no TLS)
+- Successor product: Motorola Solutions Kodiak MCPTT for carriers
+- Standards posture: 3GPP MCPTT (SA WG6) — TS 23.379, TS 24.382, TS 24.482, TS 22.582
+
+## Product
+
+- [Kodiak — Mission-Critical PTT for Carriers](https://www.motorolasolutions.com/en_us/products/command-center-software/broadband-ptt-and-lmr-interoperability/mcptt-deployment.html): the successor product page; Commercial Collaboration and Critical Communication packages, LMR interoperability via Critical Connect.
+- [Motorola Solutions Broadband Push-to-Talk](https://www.motorolasolutions.com/en_us/products/broadband-push-to-talk.html): the wider broadband PTT family (WAVE PTX, Critical Connect, Kodiak).
+
+## APIs
+
+No public API specification, reference documentation, or SDK is published for Kodiak.
+Motorola Solutions offers PTT APIs for integrating broadband push-to-talk with
+third-party applications, but access is gated behind a partner program.
+
+- [Application Developer Program](https://www.motorolasolutions.com/en_us/developers/application-partner-developer-program.html): the program that grants access to Broadband Push-to-X APIs.
+- [Developer portal (sign-in required)](https://code.motorolasolutions.com/users/sign_in): where approved partners access API materials.
+- [API partner onboarding application](https://partnerapply.motorolasolutions.com/s/api-partner-onboarding-new-application?language=en_US): the sign-up path for API access.
+
+## Artifacts
+
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/kodiak-networks/refs/heads/main/apis.yml)
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/kodiak-networks/refs/heads/main/security/kodiak-networks-domain-security.yml)
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/kodiak-networks/refs/heads/main/well-known/kodiak-networks-well-known.yml)
+
+## Notes for agents
+
+There is nothing to call here. Do not attempt to construct requests against
+kodiaknetworks.com — it hosts no API. Any integration work targeting this
+technology should start at the Motorola Solutions Application Developer Program.
