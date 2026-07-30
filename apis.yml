@@ -1,20 +1,52 @@
 aid: kodiak-networks
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kodiak-networks.png
 name: Kodiak Networks
-description: Kodiak Networks is a company surfaced as a portfolio company of redpoint-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Kodiak Networks built a carrier-grade Push-to-Talk over Cellular (PoC) platform that wireless
+  operators deployed as their own branded push-to-talk service, competing with legacy land mobile
+  radio for dispatch, field-service and public-safety workforces. Motorola Solutions acquired the
+  company in 2017 and the technology now ships as Motorola Solutions' "Kodiak" mission-critical
+  push-to-talk (MCPTT) offering for carriers, aligned to the 3GPP SA WG6 MCPTT specifications
+  (TS 23.379, TS 24.382, TS 24.482, TS 22.582) and interoperable with land mobile radio through
+  Critical Connect. Kodiak Networks no longer operates independently: its legacy domain serves only
+  a static "Site under maintenance" placeholder over plain HTTP, and it publishes no OpenAPI,
+  developer documentation, SDKs or public API surface of its own. Broadband push-to-talk APIs for
+  third-party integration do exist, but access is gated behind the Motorola Solutions Application
+  Developer Program.
 url: https://raw.githubusercontent.com/api-evangelist/kodiak-networks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - redpoint-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-no-public-api
+x-status: acquired
+x-acquired-by: Motorola Solutions
+x-acquired-year: 2017
+x-successor-product: Motorola Solutions Kodiak MCPTT for Carriers
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Push To Talk
+- Telecommunications
+- Mobile
+- Public Safety
+- Wireless Carriers
+- MCPTT
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +55,25 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  name: Kodiak Networks (legacy domain — maintenance placeholder)
   url: http://www.kodiaknetworks.com/
+- type: ProductPage
+  name: Motorola Solutions — Kodiak, Mission-Critical PTT for Carriers
+  url: https://www.motorolasolutions.com/en_us/products/command-center-software/broadband-ptt-and-lmr-interoperability/mcptt-deployment.html
+- type: DeveloperPortal
+  name: Motorola Solutions Application Developer Program (gateway to Broadband Push-to-X APIs)
+  url: https://www.motorolasolutions.com/en_us/developers/application-partner-developer-program.html
+- type: SignUp
+  name: Motorola Solutions API partner onboarding application
+  url: https://partnerapply.motorolasolutions.com/s/api-partner-onboarding-new-application?language=en_US
+- type: LLMsTxt
+  name: llms.txt
+  url: llms/kodiak-networks-llms.txt
+- type: DomainSecurity
+  name: Domain security probe
+  url: security/kodiak-networks-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
