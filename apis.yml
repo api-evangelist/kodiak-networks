@@ -35,7 +35,7 @@ x-status: acquired
 x-acquired-by: Motorola Solutions
 x-acquired-year: 2017
 x-successor-product: Motorola Solutions Kodiak MCPTT for Carriers
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
